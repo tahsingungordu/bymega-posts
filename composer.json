@@ -1,0 +1,28 @@
+{
+    "name": "tahsingungordu/bymega-posts",
+    "description": "A demo package for posts",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Tahsin Gungordu",
+        "email": "admin@bymega.com"
+      }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Bymega\\BymegaPosts\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bymega\\BymegaPosts\\PostServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "Bymega\\BymegaPosts\\Facades\\Calculator"
+            }
+        }
+    }
+  }
